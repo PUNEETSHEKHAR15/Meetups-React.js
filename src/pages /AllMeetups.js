@@ -1,3 +1,5 @@
+import Meetuplist from "../Components/meetups /Meetuplist";
+
 const DUMMY_DATA = [{
     id: 'm1',
     title: 'This is a first meetup',
@@ -18,17 +20,15 @@ const DUMMY_DATA = [{
 },
 ];
 
-function AllMeetups() {
+function AllMeetups(props) {
     return (
         <div>
             <h1>All Meetups</h1>
-            <ul>
-                {DUMMY_DATA.map((meetup) => {
-                    return <li key={meetup.id}>{meetup.title
-                    }</li>
+            <Meetuplist meetups={DUMMY_DATA} />
 
-                })}
-            </ul>
+
+
+
         </div>
     )
 }
