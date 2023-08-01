@@ -3,7 +3,7 @@ import React from 'react'
 function NewMeetups() {
     return (
         <div>
-            <p> new meet ups </p>
+            <h1> New Meetups </h1>
         </div>
     )
 }

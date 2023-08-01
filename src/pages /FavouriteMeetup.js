@@ -3,7 +3,7 @@ import React from 'react'
 function FavouriteMeetup() {
     return (
         <div>
-            <p>favourite meet ups </p>
+            <h1>Favourite Meetups </h1>
         </div>
     )
 }
