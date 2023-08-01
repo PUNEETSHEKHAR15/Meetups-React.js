@@ -1,17 +1,16 @@
 import AllMeetups from "./pages /AllMeetups";
 import NewMeetups from "./pages /NewMeetups";
 import FavouriteMeetup from "./pages /FavouriteMeetup";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./Components/layouts/layouts/Layout";
-// import MainNavigation from "./Components/layouts/MainNavigation";
+import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
+import MainNavigation from "./Components/layouts/MainNavigation";
 function App() {
-  // const Layout = () => {
-  //   return (
-  //     <>
-  //       <MainNavigation />
-  //       <Outlet />
-  //     </>)
-  // }
+  const Layout = () => {
+    return (
+      <>
+        <MainNavigation />
+        <Outlet />
+      </>)
+  }
   return (
     <>
       <Layout>
